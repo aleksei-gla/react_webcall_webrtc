@@ -1,0 +1,17 @@
+{
+  "name": "muiv_webcall",
+  "version": "1.0",
+  "main": "index.js",
+  "repository": "https://github.com/aleksei-gla/muiv_webcall.git",
+  "author": "Alex Golubev <aleksei.gla@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  },
+  "scripts": {
+    "dev": "concurrently \"yarn --cwd server dev\" \"yarn --cwd client dev\"",
+    "build": "cd client && yarn && yarn build",
+    "start": "cd server && yarn && node index.js"
+  }
+}

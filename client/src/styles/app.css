@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre-Franklin:wght@200;400;600&display=swap");
+.main-window {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 2rem 4rem;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.main-window {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-window .local-id {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+.main-window .local-id {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-window .local-id h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.main-window .local-id h2 + p {
+  font-size: 1.2rem;
+  border-bottom: 1px dashed #292b2c;
+}
+
+.main-window .local-id h2 + p::-moz-selection {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #f7f7f7;
+}
+
+.main-window .local-id h2 + p::selection {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #f7f7f7;
+}
+
+.main-window .remote-id {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-window .remote-id {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-window .remote-id label {
+  font-size: 1.2rem;
+}
+
+.main-window .remote-id input {
+  margin: 0.5rem 0;
+  padding: 0.25rem;
+  background: none;
+  border: none;
+  outline: none;
+  text-align: center;
+  border-bottom: 1px solid #292b2c;
+}
+
+.main-window .remote-id .error {
+  margin: 0.25rem 0;
+  color: #e62424;
+}
+
+.main-window .control {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.call-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.call-modal .inner {
+  padding: 1rem 4rem;
+  background-color: #f8f532;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  -webkit-animation: scale 0.6s linear infinite alternate;
+          animation: scale 0.6s linear infinite alternate;
+}
+
+.call-modal .inner p {
+  margin: 0.5rem 0;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.call-modal .inner .control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0;
+}
+
+.call-window {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.call-window .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.call-window .inner {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.call-window .inner .video video {
+  border-radius: 4px;
+}
+
+.call-window .inner .video .remote {
+  width: 100%;
+  max-height: 90vh;
+}
+
+.call-window .inner .video .local {
+  position: absolute;
+  width: 25vw;
+  cursor: pointer;
+}
+
+.call-window .inner .video .local.dragging {
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  cursor: move;
+}
+
+.call-window .inner .control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 5%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Libre-Franklin";
+  font-size: 1rem;
+  color: #292b2c;
+}
+
+@-webkit-keyframes scale {
+  from {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scale {
+  from {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.app {
+  min-height: 100vh;
+  background: #12c2e9;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#f64f59), color-stop(#c471ed), to(#12c2e9));
+  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.app h1 {
+  position: absolute;
+  top: 5%;
+  font-size: 1.6rem;
+}
+
+.app button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.5rem;
+  padding: 0.75rem;
+  background: #26c749;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.app button:hover {
+  background: #b34f70;
+}
+
+.app button:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.app button.reject {
+  background-color: #e62424;
+}
+
+.app button svg {
+  fill: #f7f7f7;
+}
+
+.app .calling {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.app .calling button {
+  padding: 1.4rem;
+  background-color: #b34f70;
+  -webkit-animation: scale 0.6s linear infinite alternate;
+          animation: scale 0.6s linear infinite alternate;
+  cursor: none;
+}
+
+.app .calling button svg {
+  font-size: 1.6rem;
+}
+/*# sourceMappingURL=app.css.map */
